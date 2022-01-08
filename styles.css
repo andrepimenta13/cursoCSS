@@ -5,6 +5,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin: 0;
 }
 
 .container {
@@ -52,7 +53,6 @@ body {
 
 .main-form .form-group {
     padding-bottom: 10px;
-
 }
 
 .main-form .form-group input {
@@ -71,9 +71,83 @@ body {
     border: none;
 }
 
-.box{
+.box {
     width: 80%;
     margin: auto;
 }
 
-/* 44:03 */
+/* Positions */
+
+.relative {
+    position: relative;
+    border: 3px solid #333;
+    height: 500px;
+    border-radius: 7px;
+}
+
+.relative .absolute {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.relative .absolute h1 {
+    margin: 0;
+}
+
+/* Barra de navegação */
+
+#main-navbar {
+    background-color: #333;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+
+/* Fixed Button */
+
+.fixed-button {
+    background: #333;
+    color: #eee;
+    border-radius: 50px;
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px
+}
+
+/* Categories */
+
+.categories ul {
+    list-style: none;
+}
+
+
+.categories ul li:first-child {
+    color: red
+}
+
+.categories ul li:last-child {
+    color: green
+}
+
+.categories ul li:nth-child(3) {
+    color: orange;
+}
+
+.categories ul li:nth-child(2) {
+    color: royalblue;
+}
+
+.categories ul li:nth-child(even) {
+    color: yellow;
+}
+
+.categories ul li:nth-child(odd) {
+    color: orchid;
+}
